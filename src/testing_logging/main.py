@@ -9,21 +9,12 @@ logger = logging.getLogger(__name__)
 def main():
     print("just printing here")
     try:
-        logger_package = logging.getLogger(str(__package__))
-        print(__package__)
         logger.info("Starting the main function")
         module1.some_function()
         module2.another_function()
     except Exception as e:
+        logger_package = logging.getLogger(str(__package__))
         logger_package.propagate, old_value = False, logger_package.propagate
-        # console_handler = None
-        # print(logger_package.handlers)
-        # print(logger_package.propagate)
-        # logger_package.exception("Yo")
-        # if console_handler:
-        #     logger_package.addHandler(console_handler)
-        # logger_package.propagate = old_value
-        # logger.error(e, stack_info=True)
         logger.exception(e)
         logger_package.propagate = old_value
         raise e
