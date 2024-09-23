@@ -1,18 +1,18 @@
-2024-09-23 09:37:13.526 Python[63512:18912604] +[IMKClient subclass]: chose IMKClient_Legacy
-2024-09-23 09:37:13.527 Python[63512:18912604] +[IMKInputSession subclass]: chose IMKInputSession_Legacy
-2024-09-23 09:37:13,567 - testing_logging.main - INFO - Starting the main function
-2024-09-23 09:37:13,567 - testing_logging.module2 - INFO - This is a info message from module2
-2024-09-23 09:37:13,567 - testing_logging.module2 - WARNING - This is a warning message from module2
-2024-09-23 09:37:13,567 - testing_logging.module2 - ERROR - This is an error message from module2
+2024-09-23 10:02:40.105 Python[21309:19085605] +[IMKClient subclass]: chose IMKClient_Legacy
+2024-09-23 10:02:40.105 Python[21309:19085605] +[IMKInputSession subclass]: chose IMKInputSession_Legacy
+2024-09-23 10:02:41,478 - testing_python_logging.main - INFO - Starting the main function
+2024-09-23 10:02:41,478 - testing_python_logging.module2 - INFO - This is a info message from module2
+2024-09-23 10:02:41,478 - testing_python_logging.module2 - WARNING - This is a warning message from module2
+2024-09-23 10:02:41,478 - testing_python_logging.module2 - ERROR - This is an error message from module2
 just printing here
 Traceback (most recent call last):
-  File "/Users/ct5868/code/testing-nested-logging/outer_and_inner_logger.py", line 10, in <module>
-    testing_logging.main.main()
-  File "/Users/ct5868/code/testing-nested-logging/src/testing_logging/main.py", line 25, in main
+  File "/Users/ct5868/code/testing-nested-logging/outer_and_inner_logger.py", line 9, in <module>
+    testing_python_logging.main.main()
+  File "/Users/ct5868/code/testing-nested-logging/src/testing_python_logging/main.py", line 23, in main
     raise e
-  File "/Users/ct5868/code/testing-nested-logging/src/testing_logging/main.py", line 18, in main
+  File "/Users/ct5868/code/testing-nested-logging/src/testing_python_logging/main.py", line 16, in main
     module2.another_function()
-  File "/Users/ct5868/code/testing-nested-logging/src/testing_logging/module2.py", line 11, in another_function
+  File "/Users/ct5868/code/testing-nested-logging/src/testing_python_logging/module2.py", line 11, in another_function
     0/0
     ~^~
 ZeroDivisionError: division by zero

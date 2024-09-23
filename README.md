@@ -1,14 +1,14 @@
 # testing-python-logging
 
-The logger is defined within the `__init__.py` which is run before `__main__.py` and the first time someone runs `import testing_logging` which ensures that the module level logger for the package is always defined.
+The logger is defined within the `__init__.py` which is run before `__main__.py` and the first time someone runs `import testing_python_logging` which ensures that the module level logger for the package is always defined.
 
 ## Installation
 
 Please install as a package by doing
 
 ```bash
-git clone git@github.com:tabedzki/testing-python-logging.git
-cd testing-python-logging
+git clone git@github.com:tabedzki/testing_python_logging.git
+cd testing_python_logging
 pip install -e .
 ```
 
@@ -17,7 +17,7 @@ pip install -e .
 The code can be run by using the code as a module
 
 ```bash
-python -m testing_logging
+python -m testing_python_logging
 ```
 
 or run as a library through the example script

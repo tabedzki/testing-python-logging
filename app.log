@@ -1,14 +1,14 @@
-2024-09-23 09:37:13,567 - testing_logging.main - INFO - Starting the main function
-2024-09-23 09:37:13,567 - testing_logging.module1 - DEBUG - This is a debug message from module1
-2024-09-23 09:37:13,567 - testing_logging.module2 - DEBUG - This is a debug message from module2
-2024-09-23 09:37:13,567 - testing_logging.module2 - INFO - This is a info message from module2
-2024-09-23 09:37:13,567 - testing_logging.module2 - WARNING - This is a warning message from module2
-2024-09-23 09:37:13,567 - testing_logging.module2 - ERROR - This is an error message from module2
-2024-09-23 09:37:13,567 - testing_logging.main - ERROR - Here
+2024-09-23 10:09:30,560 - testing_python_logging.main - INFO - Starting the main function
+2024-09-23 10:09:30,561 - testing_python_logging.module1 - DEBUG - This is a debug message from module1
+2024-09-23 10:09:30,561 - testing_python_logging.module2 - DEBUG - This is a debug message from module2
+2024-09-23 10:09:30,561 - testing_python_logging.module2 - INFO - This is a info message from module2
+2024-09-23 10:09:30,561 - testing_python_logging.module2 - WARNING - This is a warning message from module2
+2024-09-23 10:09:30,561 - testing_python_logging.module2 - ERROR - This is an error message from module2
+2024-09-23 10:09:30,561 - testing_python_logging.main - ERROR - Here
 Traceback (most recent call last):
-  File "/Users/ct5868/code/testing-nested-logging/src/testing_logging/main.py", line 18, in main
+  File "/Users/ct5868/code/testing-nested-logging/src/testing_python_logging/main.py", line 16, in main
     module2.another_function()
-  File "/Users/ct5868/code/testing-nested-logging/src/testing_logging/module2.py", line 11, in another_function
+  File "/Users/ct5868/code/testing-nested-logging/src/testing_python_logging/module2.py", line 11, in another_function
     0/0
     ~^~
 ZeroDivisionError: division by zero
