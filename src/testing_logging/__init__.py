@@ -7,14 +7,14 @@ from . import main
 def setup_logging():
     logging_config = {
         'version': 1,
-        'disable_existing_loggers': False,
+        'disable_existing_loggers': False, # Doing this allows you to not override the root logger set by an external user
         'formatters': {
             'standard': {
                 'format': '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             },
         },
         'handlers': {
-            'file': {
+            'app_log_file': {
                 'level': 'DEBUG',
                 'class': 'logging.FileHandler',
                 'filename': 'app.log',
@@ -29,16 +29,20 @@ def setup_logging():
         },
         'loggers': {
             str(__package__): {  # module-level logger
-                # 'handlers': ['file', 'console'],
-                'handlers': ['file'],
+                # 'handlers': ['app_log_file', 'console'],
+                'handlers': ['app_log_file'],
                 'level': "DEBUG",
                 'propagate': True,
-                # 'propagate': False,
             },
-            'root': {
+            'root': { # Defines the root logger if the external user did not define it
                 'handlers': ['console'],
-                # 'level': 'ERROR',  # Root logger level
-                'level': 'WARNING',  # Root logger level
+                'level': 'INFO',  # Root logger level
+            },
+            # Other loggers, such as for matplotlib, can be define here.
+            'matplotlib': {  # module-level logger
+                'handlers': ['app_log_file'],
+                'level': "INFO",
+                'propagate': True,
             },
         }
     }

@@ -37,6 +37,7 @@ path = "src/testing_logging/__about__.py"
 [tool.hatch.envs.types]
 extra-dependencies = [
   "mypy>=1.0.0",
+  "matplotlib",
 ]
 [tool.hatch.build.targets.wheel]
 packages = ["src/testing_logging"]
