@@ -1,4 +1,4 @@
-# testing-python-logging
+# testing_python_logging
 
 The logger is defined within the `__init__.py` which is run before `__main__.py` and the first time someone runs `import testing_python_logging` which ensures that the module level logger for the package is always defined.
 
